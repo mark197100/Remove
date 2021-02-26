@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-$data = file_get_contents('https://v.douyin.com/WuRMPV/');
+$data = file_get_contents('php://input');
 if(empty($data)){
     return jerr('请输入抖音复制的链接后操作');
 }
