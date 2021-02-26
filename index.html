@@ -119,7 +119,7 @@
             doPost() {
                 var that = this;
                 that.fullscreenLoading = true;
-                axios.post('/api.php', {rel:that.keyword})
+                axios.post('api.php', that.keyword)
                     .then(function (response) {
                         that.fullscreenLoading = false;
                         if (response.data.code == 200) {
