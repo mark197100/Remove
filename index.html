@@ -118,7 +118,7 @@
             doPost() {
                 var that = this;
                 that.fullscreenLoading = true;
-                axios.get('./api.php&')
+                axios.get('./api.php')
                     .then(function (response) {
                         that.fullscreenLoading = false;
                         if (response.data.code == 200) {
